@@ -19,6 +19,7 @@
     "cypress:run": "cypress run --config video=false",
     "login:techtrain": "techtrain-railway login",
     "hook:pre-commit": "techtrain-railway hook:pre-commit",
+    "test": "yarn hook:pre-commit",
     "hook:update": "simple-git-hooks",
     "station2:prettier": "prettier -c ./src/station2.html",
     "postinstall": "yarn hook:update && yarn login:techtrain"
