@@ -10,9 +10,10 @@ header {
   margin: 0 auto;
   width: 1200px;
   display: flex;
-  justify-content: space-between;
+  justify-content: start;
   align-items: center;
   flex-wrap: wrap;
+  gap: 20px 30px;
 }
 
 .card {
@@ -20,7 +21,6 @@ header {
   width: 288px;
   min-height: 300px;
   padding: 8px;
-  margin-bottom: 100px;
 }
 
 .card__img-top {
@@ -39,4 +39,37 @@ header {
 .card__description {
   color: #282828;
   font-size: 12px;
+}
+
+@media screen and (max-width: 1200px) {
+  .container {
+    width: 100%;
+  }
+
+  .card__title {
+    font-size: 12px;
+  }
+
+  .card__description {
+    font-size: 8px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    display: block;
+    width: 100%;
+  }
+
+  .card {
+    width: auto;
+    margin-bottom: 8px;
+  }
+
+  .card__description {
+    display: none;
+  }
 }
