@@ -1,4 +1,4 @@
 # browser-syncをnpmでglobalにインストールしてこれを叩く。
 # あとstation9.htmlとかにアクセスしてホットリロードできるはず
 start:
-	browser-sync start --server --files "assets/css/*.css"
+	browser-sync start --server --files "*"
